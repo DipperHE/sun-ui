@@ -19,7 +19,7 @@
           </li>
         </ol>
       </aside>
-      <main>主内容</main>
+      <router-view />
     </div>
   </div>
 </template>
