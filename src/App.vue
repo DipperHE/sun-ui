@@ -1,15 +1,15 @@
 <template>
-  <div>hi</div>
-  <Dipper />
+  <div>
+    导航栏 |
+    <router-link to="/">Dipper</router-link> |
+    <router-link to="/xxx">Dipper2</router-link>
+  </div>
+  <hr />
+  <router-view />
 </template>
 
 <script>
-import Dipper from "./components/Dipper.vue";
-
 export default {
   name: "App",
-  components: {
-    Dipper,
-  },
 };
 </script>
