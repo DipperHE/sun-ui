@@ -1,3 +1,5 @@
 <template>
-  <div>tab组件</div>
+  <div>
+    <slot />
+  </div>
 </template>
