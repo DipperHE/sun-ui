@@ -1,8 +1,8 @@
 Arguments: 
-  D:\Software\nodejs\node.exe D:\Software\yarn\bin\yarn.js add -D sass@1.26.10
+  D:\Software\nodejs\node.exe D:\Software\yarn\bin\yarn.js add github-markdowm-css
 
 PATH: 
-  D:\Software\cmder\vendor\git-for-windows\mingw64\bin;D:\Software\cmder\vendor\git-for-windows\usr\bin;C:\Users\10231\bin;D:\PKPM\EXPPWI;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Autodesk Shared;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Users\10231\AppData\Local\Microsoft\WindowsApps;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;D:\Software\nodejs;D:\Software\yarn\bin;C:\Users\10231\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Tencent\QQGameTempest\Hall.57773;C:\Users\10231\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\10231\AppData\Roaming\npm;C:\Users\10231\AppData\Local\Yarn\bin
+  D:\PKPM\EXPPWI;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Autodesk Shared\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\10231\AppData\Local\Microsoft\WindowsApps;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Software\nodejs\;D:\Software\yarn\bin\;C:\Users\10231\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Tencent\QQGameTempest\Hall.57773\;C:\Users\10231\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\10231\AppData\Roaming\npm;C:\Users\10231\AppData\Local\Yarn\bin
 
 Yarn version: 
   1.22.5
@@ -14,12 +14,17 @@ Platform:
   win32 x64
 
 Trace: 
-  SyntaxError: D:\Software\xuexi\wheel-ui-1\package.json: Unexpected token } in JSON at position 282
-      at JSON.parse (<anonymous>)
-      at D:\Software\yarn\lib\cli.js:1625:59
-      at Generator.next (<anonymous>)
-      at step (D:\Software\yarn\lib\cli.js:310:30)
-      at D:\Software\yarn\lib\cli.js:321:13
+  Error: https://registry.npmjs.org/github-markdowm-css: Not found
+      at Request.params.callback [as _callback] (D:\Software\yarn\lib\cli.js:66097:18)
+      at Request.self.callback (D:\Software\yarn\lib\cli.js:140749:22)
+      at Request.emit (node:events:527:28)
+      at Request.<anonymous> (D:\Software\yarn\lib\cli.js:141721:10)
+      at Request.emit (node:events:527:28)
+      at IncomingMessage.<anonymous> (D:\Software\yarn\lib\cli.js:141643:12)
+      at Object.onceWrapper (node:events:641:28)
+      at IncomingMessage.emit (node:events:539:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
 
 npm manifest: 
   {
@@ -35,7 +40,8 @@ npm manifest:
     },
     "devDependencies": {
       "@vue/compiler-sfc": "^3.0.0-rc.1",
-      "vite": "^1.0.0-rc.1",
+      "sass": "1.26.10",
+      "vite": "^1.0.0-rc.1"
     }
   }
 
