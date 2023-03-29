@@ -1,5 +1,6 @@
 <template>
-  <h1>dialog示例</h1>
+  <h1>dialog 对话框</h1>
+  <p>模态对话框。</p>
   <Demo :component="Dialog1Demo" />
   <Demo :component="Dialog2Demo" />
 </template>

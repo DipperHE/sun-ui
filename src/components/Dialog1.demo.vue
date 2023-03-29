@@ -11,11 +11,12 @@
       :cancel="f2"
     >
       <template v-slot:content>
-        <strong>hi</strong>
-        <div>hi2</div>
+        <div>Some contents...</div>
+        <div>Some contents...</div>
+        <div>Some contents...</div>
       </template>
       <template v-slot:title>
-        <strong>加粗的标题</strong>
+        <strong>Basic Dialog</strong>
       </template>
     </Dialog>
   </div>

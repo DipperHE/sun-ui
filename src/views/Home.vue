@@ -3,10 +3,13 @@
     <div class="topnavAndBanner">
       <Topnav />
       <div class="banner">
-        <h1>轱辘UI</h1>
+        <svg class="icon">
+          <use xlink:href="#icon-046-sun"></use>
+        </svg>
+        <h1>Sun UI</h1>
         <h2>一个面向学习者的UI框架</h2>
         <p class="actions">
-          <a href="https://github.com/DipperHE">GitHub</a>
+          <a href="https://github.com/DipperHE/sun-ui-website">GitHub</a>
           <router-link to="/doc">Get Start!</router-link>
         </p>
       </div>
@@ -36,6 +39,9 @@
         </li>
       </ul>
     </div>
+    <div class="footer">
+      <p>MIT Licensed | Copyright © 2023-present Dipper He</p>
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -56,7 +62,7 @@ $color: #007974;
   );
   // border-bottom-left-radius: 50% 40px;
   // border-bottom-right-radius: 50% 40px;
-  clip-path: ellipse(80% 60% at 50% 40%);
+  clip-path: ellipse(90% 60% at 50% 35%);
 }
 .features {
   margin: 64px auto;
@@ -81,7 +87,7 @@ $color: #007974;
     display: flex;
     flex-wrap: wrap;
     > li {
-      margin: 16px 0;
+      margin: 0px 0;
       display: grid;
       justify-content: start;
       align-content: space-between;
@@ -112,6 +118,15 @@ $color: #007974;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  > h1 {
+    font-size: 36px;
+  }
+  > svg {
+    width: 180px;
+    height: 180px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
   > .actions {
     padding: 8px 0;
     a {
@@ -119,12 +134,18 @@ $color: #007974;
       background: $green;
       color: white;
       display: inline-block;
-      padding: 8px 24px;
+      padding: 12px 36px;
       border-radius: $border-radius;
       &:hover {
         text-decoration: none;
       }
     }
   }
+}
+.footer > p {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #eaecef;
+  color: #4e6e8e;
 }
 </style>

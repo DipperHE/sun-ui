@@ -1,17 +1,16 @@
 # 开始使用
 请先[安装](#/doc/install)本组件库。
 
-然后在你的代码中写入下面的代码
+然后在你的代码中引入你需要的组件
 
 ```
-import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "wheel-ui-1-hsh"
+import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "sun-ui-1-hsh"
 ```
 
-就可以使用我提供的组件了。
+就可以使用我提供的组件了！
 
-## Vue 单文件组件
+## Vue 单文件组件示例
 
-代码示例：
 
 ```
 <template>
@@ -20,9 +19,13 @@ import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "wheel-ui-1-hsh"
   </div>
 </template>
 <script>
-import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "king-ui"
+import { Button } from "sun-ui"
 export default {
-  components: {Button}
+  components: {
+    Button
+    }
 }
 </script>
 ```
+
+上一节：[安装](#/doc/install)

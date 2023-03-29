@@ -8,8 +8,8 @@
             if (t === selected) selectedItem = el;
           }
         "
-        @click="select(t)"
-        :class="{ selected: t === selected }"
+        @click="select(t, t === disabled)"
+        :class="[{ selected: t === selected }, { disabled: t === disabled }]"
         v-for="(t, index) in titles"
         :key="index"
       >
@@ -34,6 +34,9 @@ export default {
     selected: {
       type: String,
     },
+    disabled: {
+      type: String,
+    },
   },
   setup(props, context) {
     const selectedItem = ref<HTMLDivElement>(null);
@@ -42,6 +45,9 @@ export default {
     onMounted(() => {
       watchEffect(
         () => {
+          if (selectedItem.value.classList.contains("disabled")) {
+            return;
+          }
           const { width } = selectedItem.value.getBoundingClientRect();
           indicator.value.style.width = width + "px";
           const { left: left1 } = container.value.getBoundingClientRect();
@@ -68,7 +74,10 @@ export default {
     const titles = defaults.map((tag) => {
       return tag.props.title;
     });
-    const select = (title: string) => {
+    const select = (title: string, disabled) => {
+      if (disabled) {
+        return;
+      }
       context.emit("update:selected", title);
     };
     return {
@@ -102,6 +111,11 @@ $border-color: #d9d9d9;
       }
       &.selected {
         color: $blue;
+      }
+      &.disabled {
+        cursor: not-allowed;
+        user-select: none;
+        color: grey;
       }
     }
     &-indicator {

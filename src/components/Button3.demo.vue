@@ -9,6 +9,11 @@
       <Button level="danger">危险按钮</Button>
     </div>
     <div>
+      <Button theme="dashed" level="main">主要虚线按钮</Button>
+      <Button theme="dashed">普通虚线按钮</Button>
+      <Button theme="dashed" level="danger">危险虚线按钮</Button>
+    </div>
+    <div>
       <Button theme="link" level="main">主要链接按钮</Button>
       <Button theme="link">普通链接按钮</Button>
       <Button theme="link" level="danger">危险链接按钮</Button>

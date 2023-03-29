@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>Switch 组件示例</h1>
+    <h1>Switch 开关</h1>
+    <p>开关选择器。</p>
     <Demo :component="Switch1Demo" />
     <Demo :component="Switch2Demo" />
   </div>

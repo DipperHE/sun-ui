@@ -66,7 +66,9 @@ $grey: grey;
   box-shadow: 0 1px 0 fade-out(black, 0.95);
   transition: background 250ms;
   & + & {
-    margin-left: 8px;
+    margin-left: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   &:hover,
   &:focus {
@@ -78,6 +80,15 @@ $grey: grey;
   }
   &::-moz-focus-inner {
     border: 0;
+  }
+  &.gulu-theme-dashed {
+    border-color: transparent;
+    box-shadow: none;
+    border: 1px dashed $border-color;
+    &:hover,
+    &:focus {
+      border-color: $blue;
+    }
   }
   &.gulu-theme-link {
     border-color: transparent;
@@ -130,6 +141,26 @@ $grey: grey;
       }
     }
   }
+  &.gulu-theme-dashed {
+    &.gulu-level-main {
+      color: $blue;
+      border-color: $blue;
+      &:hover,
+      &:focus {
+        color: darken($blue, 10%);
+        border-color: darken($blue, 10%);
+      }
+    }
+    &.gulu-level-danger {
+      border-color: $red;
+      color: $red;
+      &:hover,
+      &:focus {
+        color: darken($red, 10%);
+        border-color: darken($red, 10%);
+      }
+    }
+  }
   &.gulu-theme-link {
     &.gulu-level-danger {
       color: $red;
@@ -155,9 +186,11 @@ $grey: grey;
       }
     }
   }
-  &.gulu-theme-button {
+  &.gulu-theme-button,
+  &.gulu-theme-dashed {
     &[disabled] {
       cursor: not-allowed;
+      user-select: none;
       color: $grey;
       &:hover {
         border-color: $grey;
@@ -168,6 +201,7 @@ $grey: grey;
   &.gulu-theme-text {
     &[disabled] {
       cursor: not-allowed;
+      user-select: none;
       color: $grey;
     }
   }

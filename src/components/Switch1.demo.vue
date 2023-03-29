@@ -1,5 +1,5 @@
 <demo>
-常规用法
+常规使用
 </demo>
 
 <template>

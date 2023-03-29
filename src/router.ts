@@ -10,6 +10,7 @@ import TabsDemo from "./components/TabsDemo.vue";
 import intro from "./markdown/intro.md";
 import getStarted from "./markdown/get-started.md";
 import install from "./markdown/install.md";
+import InputDemo from "./components/InputDemo.vue";
 
 const history = createWebHashHistory();
 const md = (string) => h(Markdown, { content: string, key: string });
@@ -29,6 +30,7 @@ export const router = createRouter({
         { path: "button", component: ButtonDemo },
         { path: "dialog", component: DialogDemo },
         { path: "tabs", component: TabsDemo },
+        { path: "input", component: InputDemo },
       ],
     },
   ],

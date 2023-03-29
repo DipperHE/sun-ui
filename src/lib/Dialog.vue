@@ -14,8 +14,8 @@
             <slot name="content" />
           </main>
           <footer>
-            <Button level="main" @click="ok">OK</Button>
-            <Button @click="cancel">Cancel</Button>
+            <Button @click="cancel">取消</Button>
+            <Button level="main" @click="ok">确定</Button>
           </footer>
         </div>
       </div>
@@ -59,8 +59,9 @@ export default {
       }
     };
     const cancel = () => {
-      props.cancel?.();
-      close();
+      if (props.cancel?.() !== false) {
+        close();
+      }
     };
     return { close, onClickOverlay, ok, cancel };
   },
@@ -73,7 +74,7 @@ $border-color: #d9d9d9;
   background: white;
   border-radius: $radius;
   box-shadow: 0 0 3px fade_out(black, 0.5);
-  min-width: 15em;
+  min-width: 20em;
   max-width: 90%;
   &-overlay {
     position: fixed;

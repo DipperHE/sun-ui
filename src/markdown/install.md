@@ -3,13 +3,13 @@
 打开终端运行下列命令：
 
 ```
-npm install wheel-ui-1-hsh
+npm install sun-ui-1-hsh
 ```
 
-或
+或者
 
 ```
-yarn add wheel-ui-1-hsh
+yarn add sun-ui-1-hsh
 ```
 
-下一节：[开始使用](#/doc/get-started)
+上一节：[介绍](#/doc/intro)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;下一节：[开始使用](#/doc/get-started)

@@ -7,7 +7,12 @@
     </router-link>
     <ul class="menu">
       <li>
-        <router-link to="/doc">文档</router-link>
+        <router-link to="/doc"
+          >文档
+          <svg class="icon">
+            <use xlink:href="#icon-outgoing"></use>
+          </svg>
+        </router-link>
       </li>
     </ul>
     <svg v-if="toggleMenuButtonVisible" class="toggleAside" @click="toggleMenu">
@@ -60,6 +65,9 @@ $color: #007974;
     flex-wrap: nowrap;
     > li {
       margin: 0 1em;
+      a {
+        text-decoration: none;
+      }
     }
   }
   > .toggleAside {
