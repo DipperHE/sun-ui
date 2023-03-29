@@ -9,7 +9,7 @@
         <h1>Sun UI</h1>
         <h2>一个面向学习者的UI框架</h2>
         <p class="actions">
-          <a href="https://github.com/DipperHE/sun-ui-website">GitHub</a>
+          <a href="https://github.com/DipperHE/sun-ui">GitHub</a>
           <router-link to="/doc">Get Start!</router-link>
         </p>
       </div>
